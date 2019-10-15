@@ -20,12 +20,17 @@ class _MyAppState extends State<MyApp> {
           title: Text('Gesture Detector dan Animated Container'),
         ),
         body: Center(
-          child: AnimatedContainer(
-            color: Color.fromARGB(255, random.nextInt(256), random.nextInt(256),
-                random.nextInt(256)),
-            duration: Duration(seconds: 1),
-            width: 50.0 + random.nextInt(101),
-            height: 50.0 + random.nextInt(151),
+          child: GestureDetector(
+            onTap: () {
+              setState(() {});
+            },
+            child: AnimatedContainer(
+              color: Color.fromARGB(255, random.nextInt(256),
+                  random.nextInt(256), random.nextInt(256)),
+              duration: Duration(seconds: 1),
+              width: 50.0 + random.nextInt(101),
+              height: 50.0 + random.nextInt(151),
+            ),
           ),
         ),
       ),

@@ -4,13 +4,16 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Example Animated Container :
 
-A few resources to get you started if this is your first Flutter project:
+```dart
+AnimatedContainer(
+    color: Color.fromARGB(255, random.nextInt(256), random.nextInt(256),
+        random.nextInt(256)),
+    duration: Duration(seconds: 1),
+    width: 50.0 + random.nextInt(101),
+    height: 50.0 + random.nextInt(151),
+  )
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Gesture Detector have so many properties you can see from [here](https://api.flutter.dev/flutter/widgets/GestureDetector-class.html)
